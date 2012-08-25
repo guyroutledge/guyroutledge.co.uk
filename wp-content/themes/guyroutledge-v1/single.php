@@ -6,7 +6,7 @@
 
 		<article class="blog-post inside">
 
-			<a href="#respond"><h2 class="post-title" data-comments="<?php echo get_comments_number() ?>"><?php the_title() ?></h2></a>
+			<a href="#respond" title="Jump to the Comments"><h2 class="post-title" data-comments="<?php echo get_comments_number() ?>"><?php the_title() ?></h2></a>
  			
  			<?php get_template_part( '/inc/meta' ) ?>
 
