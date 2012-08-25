@@ -1,77 +1,14 @@
-
-                           .:,
-                           ,?~
-                           ,I=
-                           :7=
-                           ~$+.
-                           ~7+.
-                          .+7?,
-                          ,+I7:
-                          ,?I7:
-                          :7I7~
-                          =III?,
-                       :?IIIIIIII=.
-                      ~IIIIIIIIIII+.
-                     ?IIIIIIIIIIIIII:
-                    ,IIIIIIIIIIIIIII+
-                    ?IIIIIIIIIIIIIII?.
-                   .?IIIIIIIIIIIIIIII:
-                   =IIIIIIIIIIIIIIIII?.
-                ~?IIIIIIIIIIIIIIIIIIII7I=,
-              :+I7III7IIIIIIIIIIIII7IIIII?~
-           :?III7?~     +7IIIII7?~.    +I7I7I=.
-         ,+I77I~          =?II+:..       :+I7II:.
-      ,?I+:.               .?~                ,~II~.
-      ~                    .=:                   :~,
-
-
-
-,8?                            ,7OO?            .Z$.
-~M$       .78~                ,OMMMO8O,         ,MN.       +77=
-:M7        .,.                ZM,   ...         .ND       $=D$?+
-:M7 ....    .     ... ..      8D, .  .    ....  .ND  ...  $=NO:+
-:MMMDDNM8. IM= ,8MNDDNMD    ,ZMMDDD.ON ,8MDDDMM:.DMMNDDMM: +$$=
-:MD+  ,8M+ IM~ IMO.  :MD      OM.   ON =MZ   :I,.NM$,  7M?
-:M7    ~MZ IM::MO.    MD      OM,  .ON .$MMD$?, .ND    ~M7.
-:M7    ?M$ IM:,ND,    MD      8M,  .ON.    .:$M7.ND    ~M7.
-:MZ   ~DM~ IM~ OMI  .?MD      8M,  .ON ~I.   ?M$.ND    ~M7.
-:MD8MMM?.  7M=  =NMMD+MD      DM:  .DM :$MMMMO~ ,MN.   ~M$.
-                     .MZ
-               ~NMMMMMO
-                7NDNO?
-
-
-
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
 /* SITE */
 Doctype: HTML5
-IDE: Adobe Illustrator, Sublime Text 2
+Tech: Sublime Text 2, Chrome, Git
 
 /* TEAM */
-Agency: Big Fish Design
-Site: http://www.bigfish.co.uk/
-Twitter: @bigfishlondon
+Site: http://guyroutledge.co.uk/
+Twitter: @guyroutledge
 Location: London, UK
 
-Tech Lead: Rob Miller
-Email: rob@bigfish.co.uk
-
-Principal Designer:
-Email:
-
-Designer:
-Email:
-
-Designer:
-Email:
-
-Backend developer:
-Email:
-
-Frontend developer:
-Email:
-
-Frontend developer:
-Email:
+Designer, developer, kitten herder and all round properly nice chap:
+Guy Routledge
