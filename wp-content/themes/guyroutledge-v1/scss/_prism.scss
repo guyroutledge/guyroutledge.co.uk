@@ -1,0 +1,121 @@
+/**************************
+	$$ Prism
+**************************/
+
+// Custom theme for Prism by @guyroutledge
+
+code[class*="language"],
+pre[class*="language"] {
+
+	color: $color-pink;
+	background:none;
+	
+	font-size:0.95em;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-wrap:normal;
+	@include text-shadow(0 1px black);
+	
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language"] {
+	width:auto;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;	
+}
+code[class*="language"] { 
+	width:auto;
+}
+
+:not(pre) > code[class*="language"],
+pre[class*="language"] {
+	margin:0 0 1.5em;
+
+	background: #444;
+	border-top:2px solid #222;
+	border-bottom:2px solid #fff;
+	@include border-radius(1em);
+	@include box-shadow(inset -5px 5px 10px rgba(0,0,0,0.3));
+}
+
+/* plain code */
+code[class*="language"].plain,
+code[class*="language"].plain span {
+	color:#fff;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
+}
+
+.token.punctuation {
+	color: #fff;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.operator,
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.keyword {
+	color: $color-yellow;
+}
+
+.token.selector,
+.token.attr-name {
+	color: $color-light-blue;
+}
+
+.token.entity,
+.token.url,
+.token.string,
+.language-css .token.string,
+.style .token.string,
+.token.attr-value {
+	color: $color-green;
+}
+
+.token.atrule {
+	color: $color-pink;
+}
+
+
+.token.regex,
+.token.important {
+	color: $color-lightest;
+}
+
+.token.important {
+	font-weight: bold;
+}
+
+.token.entity {
+	cursor: help;
+}

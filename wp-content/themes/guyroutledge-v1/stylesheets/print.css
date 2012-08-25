@@ -1,0 +1,59 @@
+/* line 1, ../scss/print.scss */
+.do-not-print { display: none; }
+
+/* line 2, ../scss/print.scss */
+.comments-title { page-break-before: always; }
+
+/* line 4, ../scss/print.scss */
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+
+/* line 6, ../scss/print.scss */
+h1, h2, h3, h4, h5, h6 { font-family: Helvetica, Arial, sans-serif; }
+
+/* line 7, ../scss/print.scss */
+h1 { font-size: 19pt; }
+
+/* line 8, ../scss/print.scss */
+h2 { font-size: 17pt; }
+
+/* line 9, ../scss/print.scss */
+h3 { font-size: 15pt; }
+
+/* line 10, ../scss/print.scss */
+h4, h5, h6 { font-size: 12pt; }
+
+/* line 11, ../scss/print.scss */
+code { font: 10pt Courier, monospace; }
+
+/* line 12, ../scss/print.scss */
+blockquote { margin: 1.3em; padding: 1em; }
+
+/* line 14, ../scss/print.scss */
+img { display: block; margin: 1em 0; }
+
+/* line 15, ../scss/print.scss */
+a img { border: none; }
+
+/* line 17, ../scss/print.scss */
+table { margin: 1px; text-align: left; }
+
+/* line 18, ../scss/print.scss */
+th { border-bottom: 1px solid #333; font-weight: bold; }
+
+/* line 19, ../scss/print.scss */
+td { border-bottom: 1px solid #333; }
+
+/* line 20, ../scss/print.scss */
+th, td { padding: 4px 10px 4px 0; }
+
+/* line 21, ../scss/print.scss */
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+
+/* line 22, ../scss/print.scss */
+thead { display: table-header-group; }
+
+/* line 23, ../scss/print.scss */
+tr { page-break-inside: avoid; }
+
+/* line 25, ../scss/print.scss */
+a { text-decoration: none; color: black; }

@@ -1,0 +1,46 @@
+/******************
+    Form Styles
+*******************/
+
+// Use box-sizing:border-box for all form elements if using responsive design
+// as padding and % widths don't play nice
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='number'],
+input[type='tel'],
+input[type='search'],
+textarea,
+select {
+    @include box-sizing(border-box);
+    width:100%;
+
+    margin:0.25em 0 1em 0;
+    padding:0.5em;
+    
+    color:$color-copy;
+    background:$color-form;
+
+    border:1px solid $color-border;
+    @include border-radius(10px);
+    -webkit-appearance:none;
+    &:focus {
+        outline:none;
+        @include box-shadow(0px 0px 10px transparentize($color-brand,0.5));
+    }   
+}
+
+form li { 
+    position:relative; 
+    width:100%;
+}
+
+label { 
+    font-size:0.875em; // 12px / 16px 
+}
+
+.required { color:$color-pink; }
+
+::-webkit-input-placeholder { font-style: italic; }
+:-moz-placeholder { font-style: italic; }

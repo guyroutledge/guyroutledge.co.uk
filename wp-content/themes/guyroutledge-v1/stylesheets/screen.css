@@ -1,0 +1,773 @@
+/* Add stylesheets here to be compiled by Compass */
+/***********************
+	Variables
+***********************/
+/* Base Styles and Custom Reset */
+/*********************** Reset
+***********************/
+/* line 7, ../scss/_base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+/* line 8, ../scss/_base.scss */
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* line 14, ../scss/_base.scss */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+/* line 15, ../scss/_base.scss */
+html, button, input, select, textarea { font-family: "Nobile", "Arial", sans-serif; color: #666666; }
+
+/* line 16, ../scss/_base.scss */
+body { margin: 0; background: none; color: #666666; font-size: 1em; line-height: 1.5; }
+
+/* line 18, ../scss/_base.scss */
+::-moz-selection { background: #f29c7b; color: #fff; text-shadow: none; }
+
+/* line 19, ../scss/_base.scss */
+::selection { background: #f29c7b; color: #fff; text-shadow: none; }
+
+/***********************
+	Mixins
+***********************/
+/*********************
+	Links
+*********************/
+/* line 41, ../scss/_base.scss */
+a { color: #e9561e; text-decoration: none; cursor: pointer; text-shadow: 0px 1px white; }
+
+/* line 47, ../scss/_base.scss */
+a:hover { color: #f29c7b; }
+
+/* line 50, ../scss/_base.scss */
+a:focus { outline: thin dotted; }
+
+/* line 51, ../scss/_base.scss */
+a:hover, a:active { outline: 0; }
+
+/********************
+	Typography
+********************/
+/* line 58, ../scss/_base.scss */
+body { font-family: "Nobile", "Arial", sans-serif; font-size: 16px; }
+/* line 61, ../scss/_base.scss */
+body p { font-family: "Nobile", "Arial", sans-serif; }
+
+@font-face { font-family: 'Quicksand'; src: url("../fonts/Quicksand_Bold-webfont.eot"); src: url("../fonts/Quicksand_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand_Bold-webfont.woff") format("woff"), url("../fonts/Quicksand_Bold-webfont.ttf") format("truetype"), url("../fonts/Quicksand_Bold-webfont.svg#NewBaskervilleRoman") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'QuicksandLight'; src: url("../fonts/Quicksand_Light-webfont.eot"); src: url("../fonts/Quicksand_Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand_Light-webfont.woff") format("woff"), url("../fonts/Quicksand_Light-webfont.ttf") format("truetype"), url("../fonts/Quicksand_Light-webfont.svg#NewBaskervilleRoman") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Nobile'; src: url("../fonts/nobile-webfont.eot"); src: url("../fonts/nobile-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nobile-webfont.woff") format("woff"), url("../fonts/nobile-webfont.ttf") format("truetype"), url("../fonts/nobile-webfont.svg#NewBaskervilleRoman") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'IcoMoon'; src: url("../fonts/icomoon.eot"); src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#NewBaskervilleRoman") format("svg"); font-weight: normal; font-style: normal; }
+
+/* line 112, ../scss/_base.scss */
+h1, h2, h3, h4, h5, h6 .un, .deux, .trois, .quatre, .cinq, .six { margin: 0 0 1em 0; font-family: "Quicksand", "Georgia", "Times New Roman", serif; line-height: 1.5em; font-size: 100%; font-weight: normal; }
+
+/* line 120, ../scss/_base.scss */
+h1, .un { font-size: 3em; /* 36px / 12px */ }
+
+/* line 121, ../scss/_base.scss */
+h2, .deux { font-size: 2em; /* 24px / 12px */ }
+
+/* line 122, ../scss/_base.scss */
+h3, .trois { font-size: 1.5em; /* 18px / 12px */ }
+
+/* line 123, ../scss/_base.scss */
+h4, .quatre { font-size: 1.1667em; /* 14px / 12px */ }
+
+/* line 124, ../scss/_base.scss */
+h5, .cinq { font-size: 1em; /* 12px / 12px */ }
+
+/* line 125, ../scss/_base.scss */
+h6, .six { font-size: 1em; /* 12px / 12px */ }
+
+/* line 128, ../scss/_base.scss */
+h1, h2, h3, h4, h5, h6 { color: #333333; }
+/* line 130, ../scss/_base.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #333333; }
+/* line 132, ../scss/_base.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #f29c7b; }
+
+/* line 138, ../scss/_base.scss */
+p { line-height: 1.5em; margin: 0 0 1em; }
+
+/* line 142, ../scss/_base.scss */
+blockquote { margin: 1.5em 0 1.5em 1.5em; }
+
+/* line 144, ../scss/_base.scss */
+b, strong { font-weight: bold; }
+
+/* line 145, ../scss/_base.scss */
+i, em { font-style: italic; }
+
+/* line 147, ../scss/_base.scss */
+pre, code, kbd, samp { font-family: Consolas, Monaco, 'Andale Mono', monospace; font-size: 1em; }
+
+/* line 151, ../scss/_base.scss */
+p code { padding: 0.25em; }
+
+/* line 152, ../scss/_base.scss */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+/* line 157, ../scss/_base.scss */
+code { font-family: Consolas, Monaco, 'Andale Mono', monospace; color: #000; background: #eee; }
+/* line 161, ../scss/_base.scss */
+pre code { background: none; }
+
+/*************************
+	Lists
+*************************/
+/* line 168, ../scss/_base.scss */
+ul, ol { margin: 0 0 1.5em 1.5em; padding: 0; list-style-position: outside; list-style-image: none; }
+
+/* line 169, ../scss/_base.scss */
+ul { list-style-type: disc; }
+
+/* line 170, ../scss/_base.scss */
+ol { list-style-type: decimal; }
+
+/* line 171, ../scss/_base.scss */
+li { line-height: 1.5em; font-size: inherit; padding: 0; }
+
+/* line 173, ../scss/_base.scss */
+nav ul, nav ol { list-style: none; list-style-image: none; }
+
+/************************
+	Tables
+************************/
+/* line 182, ../scss/_base.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/************************
+	Images
+************************/
+/* line 191, ../scss/_base.scss */
+img, a img { border: 0; -ms-interpolation-mode: bicubic; max-width: 100%; }
+
+/* line 197, ../scss/_base.scss */
+figure { margin: 0; }
+
+/* line 198, ../scss/_base.scss */
+figcaption { margin: 1em 0; font-style: italic; }
+
+/**************************
+	Forms
+**************************/
+/* line 207, ../scss/_base.scss */
+form { margin: 0; }
+
+/* line 208, ../scss/_base.scss */
+label { cursor: pointer; }
+
+/* line 209, ../scss/_base.scss */
+input, select, textarea { margin: 0 0 1em; }
+
+/* line 210, ../scss/_base.scss */
+input, select, textarea { font: inherit; }
+
+/* line 211, ../scss/_base.scss */
+button, input, select, textarea { font: inherit!important; vertical-align: baseline; *vertical-align: middle; }
+
+/* line 216, ../scss/_base.scss */
+button, input { line-height: normal; }
+
+/* line 219, ../scss/_base.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; *overflow: visible; }
+
+/* line 223, ../scss/_base.scss */
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* line 228, ../scss/_base.scss */
+.ginput_container { padding: 0; }
+
+/* line 230, ../scss/_base.scss */
+.gfield_error input, .gfield_error select, .gfield_error textarea { margin: 0; }
+
+/*********************
+	Layout
+*********************/
+/* line 238, ../scss/_base.scss */
+body { width: 100%; margin: 0px auto; background: #fefaef; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefaef), color-stop(50%, #fefaef), color-stop(100%, #ffffff)); background: -webkit-linear-gradient(#fefaef 0%, #fefaef 50%, #ffffff 100%); background: -moz-linear-gradient(#fefaef 0%, #fefaef 50%, #ffffff 100%); background: -o-linear-gradient(#fefaef 0%, #fefaef 50%, #ffffff 100%); background: -ms-linear-gradient(#fefaef 0%, #fefaef 50%, #ffffff 100%); background: linear-gradient(#fefaef 0%, #fefaef 50%, #ffffff 100%); }
+
+/* line 245, ../scss/_base.scss */
+.page-wrap { position: relative; width: 100%; max-width: 1200px; min-height: 100%; margin: 0 auto; padding-bottom: 100px; overflow: hidden; z-index: 1; }
+
+/****************** Form Styles
+*******************/
+/* line 15, ../scss/_forms.scss */
+input[type='text'], input[type='email'], input[type='url'], input[type='number'], input[type='tel'], input[type='search'], textarea, select { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0.25em 0 1em 0; padding: 0.5em; color: #666666; background: white; border: 1px solid #cccccc; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -webkit-appearance: none; }
+/* line 28, ../scss/_forms.scss */
+input[type='text']:focus, input[type='email']:focus, input[type='url']:focus, input[type='number']:focus, input[type='tel']:focus, input[type='search']:focus, textarea:focus, select:focus { outline: none; -webkit-box-shadow: 0px 0px 10px rgba(242, 156, 123, 0.5); -moz-box-shadow: 0px 0px 10px rgba(242, 156, 123, 0.5); box-shadow: 0px 0px 10px rgba(242, 156, 123, 0.5); }
+
+/* line 34, ../scss/_forms.scss */
+form li { position: relative; width: 100%; }
+
+/* line 39, ../scss/_forms.scss */
+label { font-size: 0.875em; }
+
+/* line 43, ../scss/_forms.scss */
+.required { color: #f29c7b; }
+
+/* line 45, ../scss/_forms.scss */
+::-webkit-input-placeholder { font-style: italic; }
+
+/* line 46, ../scss/_forms.scss */
+:-moz-placeholder { font-style: italic; }
+
+/*************************
+	Modules
+*************************/
+/* the imgblock module aka media-block */
+/* use whereever you have an image/icon/media floated next to a block of content
+
+/* READ THIS:
+/* www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ */
+/* line 11, ../scss/_modules.scss */
+.imgblock { /* 1. Create new block formatting context in modern browsers 2. Avoid shrink-wrap behaviour of table-cell 3. Override for IE6/7 4. Trigger hasLayout for block formatting context in IE6/7
+*/ }
+/* line 12, ../scss/_modules.scss */
+.imgblock .img { float: left; margin: 0 20px 0 0; }
+/* line 15, ../scss/_modules.scss */
+.imgblock .img img { display: block; }
+/* line 25, ../scss/_modules.scss */
+.imgblock .content { display: table-cell; /* 1 */ width: 10000px; /* 2 */ *width: auto; /* 3 */ *zoom: 1; /* 4 */ }
+/* line 32, ../scss/_modules.scss */
+.imgblock.flipped .img { float: right; margin: 0 0 0 20px; }
+
+/* nav module */
+/* line 37, ../scss/_modules.scss */
+.nav { list-style: none; }
+/* line 39, ../scss/_modules.scss */
+.nav li { position: relative; float: left; display: block; }
+
+/* line 46, ../scss/_modules.scss */
+.stacked li { clear: both; display: block; }
+
+/* line 52, ../scss/_modules.scss */
+.button { display: inline-block; width: 65px; height: 65px; margin: 0 0 0 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; border-left: none; border-right: none; border-top: 1px solid #fff; border-bottom: 1px solid #666; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -webkit-appearance: none; }
+/* line 69, ../scss/_modules.scss */
+.button.submit { background: #a5b9c3; text-shadow: 0 1px white; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; -ms-transition: 0.3s ease; -o-transition: 0.3s ease; transition: 0.3s ease; z-index: 11000; }
+/* line 76, ../scss/_modules.scss */
+.button.submit:hover { background: #aac3a5; }
+
+/************************ Helper Classes
+************************/
+/* line 5, ../scss/_helpers.scss */
+.fl { float: left; }
+
+/* line 6, ../scss/_helpers.scss */
+.fr { float: right; }
+
+/* line 8, ../scss/_helpers.scss */
+.first { margin-left: 0!important; }
+
+/* line 9, ../scss/_helpers.scss */
+.last { margin-right: 0!important; }
+
+/* line 10, ../scss/_helpers.scss */
+.no-margin { margin: 0; }
+
+/* line 11, ../scss/_helpers.scss */
+.mt { margin-top: 1.5em; }
+
+/* line 12, ../scss/_helpers.scss */
+.mb { margin-bottom: 1.5em; }
+
+/* line 14, ../scss/_helpers.scss */
+.indent { margin-left: 1.5em!important; }
+
+/* line 15, ../scss/_helpers.scss */
+.flush { margin-left: 0!important; }
+
+/* line 16, ../scss/_helpers.scss */
+.bullets { list-style-type: disc; }
+
+/* line 18, ../scss/_helpers.scss */
+.brand-color { color: #f29c7b; }
+
+/* line 19, ../scss/_helpers.scss */
+.brand-font { font-family: "Quicksand", "Georgia", "Times New Roman", serif; text-transform: none; }
+
+/* line 20, ../scss/_helpers.scss */
+.copy-font { font-family: "Nobile", "Arial", sans-serif; text-transform: none; }
+
+/* line 21, ../scss/_helpers.scss */
+.caption { font-style: italic; }
+
+/* line 23, ../scss/_helpers.scss */
+.screen-reader-text { position: absolute; left: -9999em; }
+
+/* line 28, ../scss/_helpers.scss */
+.has-layout { zoom: 1; }
+
+/* ideal for form inputs, label widths and paragraphs */
+/* line 32, ../scss/_helpers.scss */
+.span-100 { width: 100%; }
+
+/* line 33, ../scss/_helpers.scss */
+.span-90 { width: 90%; }
+
+/* line 34, ../scss/_helpers.scss */
+.span-80 { width: 80%; }
+
+/* line 35, ../scss/_helpers.scss */
+.span-70 { width: 70%; }
+
+/* line 36, ../scss/_helpers.scss */
+.span-60 { width: 60%; }
+
+/* line 37, ../scss/_helpers.scss */
+.span-50 { width: 50%; }
+
+/* line 38, ../scss/_helpers.scss */
+.span-40 { width: 40%; }
+
+/* line 39, ../scss/_helpers.scss */
+.span-30 { width: 30%; }
+
+/* line 40, ../scss/_helpers.scss */
+.span-20 { width: 20%; }
+
+/* line 41, ../scss/_helpers.scss */
+.span-10 { width: 10%; }
+
+/* classes to toggle state with JS */
+/* line 46, ../scss/_helpers.scss */
+.is-visible { display: block!important; }
+
+/* line 47, ../scss/_helpers.scss */
+.is-hidden { display: none!important; }
+
+/* line 49, ../scss/_helpers.scss */
+.is-collapsed { height: 0px; }
+
+/* line 50, ../scss/_helpers.scss */
+.is-expanded { height: auto; }
+
+/* group aka clearfix */
+/* line 58, ../scss/_helpers.scss */
+.group:before, .group:after, .clearfix:before, .clearfix:after { content: ""; display: table; }
+
+/* line 63, ../scss/_helpers.scss */
+.group:after, .clearfix:after { clear: both; }
+
+/* line 67, ../scss/_helpers.scss */
+.group, .clearfix { zoom: 1; /* For IE 6/7 (trigger hasLayout) */ }
+
+/* line 1, ../scss/_global.scss */
+* { -webkit-transition: ease 0.55s; -moz-transition: ease 0.55s; -ms-transition: ease 0.55s; -o-transition: ease 0.55s; transition: ease 0.55s; }
+
+/* line 5, ../scss/_global.scss */
+a, a * { -webkit-transition: ease 0.3s; -moz-transition: ease 0.3s; -ms-transition: ease 0.3s; -o-transition: ease 0.3s; transition: ease 0.3s; }
+
+/* line 9, ../scss/_global.scss */
+.inner-wrap { max-width: 1200px; margin: 0 auto; }
+
+/* line 14, ../scss/_global.scss */
+.title.work, .topic.work { background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #a1bd9c), color-stop(18%, transparent)) 0 0, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #a1bd9c), color-stop(18%, transparent)) 8px 8px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 0 1px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 8px 9px; background: -webkit-radial-gradient(#a1bd9c 16%, transparent 18%) 0 0, -webkit-radial-gradient(#a1bd9c 16%, transparent 18%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -moz-radial-gradient(#a1bd9c 16%, transparent 18%) 0 0, -moz-radial-gradient(#a1bd9c 16%, transparent 18%) 8px 8px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -o-radial-gradient(#a1bd9c 16%, transparent 18%) 0 0, -o-radial-gradient(#a1bd9c 16%, transparent 18%) 8px 8px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -ms-radial-gradient(#a1bd9c 16%, transparent 18%) 0 0, -ms-radial-gradient(#a1bd9c 16%, transparent 18%) 8px 8px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: radial-gradient(#a1bd9c 16%, transparent 18%) 0 0, radial-gradient(#a1bd9c 16%, transparent 18%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background-color: #aac3a5; background-size: 16px 16px; }
+/* line 17, ../scss/_global.scss */
+.title.blog, .topic.blog { background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #9cb2bd), color-stop(18%, transparent)) 0 0, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #9cb2bd), color-stop(18%, transparent)) 8px 8px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 0 1px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 8px 9px; background: -webkit-radial-gradient(#9cb2bd 16%, transparent 18%) 0 0, -webkit-radial-gradient(#9cb2bd 16%, transparent 18%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -moz-radial-gradient(#9cb2bd 16%, transparent 18%) 0 0, -moz-radial-gradient(#9cb2bd 16%, transparent 18%) 8px 8px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -o-radial-gradient(#9cb2bd 16%, transparent 18%) 0 0, -o-radial-gradient(#9cb2bd 16%, transparent 18%) 8px 8px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -ms-radial-gradient(#9cb2bd 16%, transparent 18%) 0 0, -ms-radial-gradient(#9cb2bd 16%, transparent 18%) 8px 8px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: radial-gradient(#9cb2bd 16%, transparent 18%) 0 0, radial-gradient(#9cb2bd 16%, transparent 18%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background-color: #a5b9c3; background-size: 16px 16px; }
+/* line 20, ../scss/_global.scss */
+.title.social, .topic.social { background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #f1926d), color-stop(18%, transparent)) 0 0, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #f1926d), color-stop(18%, transparent)) 8px 8px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 0 1px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.3)), color-stop(20%, transparent)) 8px 9px; background: -webkit-radial-gradient(#f1926d 16%, transparent 18%) 0 0, -webkit-radial-gradient(#f1926d 16%, transparent 18%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -moz-radial-gradient(#f1926d 16%, transparent 18%) 0 0, -moz-radial-gradient(#f1926d 16%, transparent 18%) 8px 8px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -o-radial-gradient(#f1926d 16%, transparent 18%) 0 0, -o-radial-gradient(#f1926d 16%, transparent 18%) 8px 8px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -o-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: -ms-radial-gradient(#f1926d 16%, transparent 18%) 0 0, -ms-radial-gradient(#f1926d 16%, transparent 18%) 8px 8px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, -ms-radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background: radial-gradient(#f1926d 16%, transparent 18%) 0 0, radial-gradient(#f1926d 16%, transparent 18%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.3) 15%, transparent 20%) 8px 9px; background-color: #f29c7b; background-size: 16px 16px; }
+/* line 23, ../scss/_global.scss */
+.title.about, .topic.about { background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #efd996), color-stop(18%, transparent)) 0 0, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #efd996), color-stop(18%, transparent)) 8px 8px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.5)), color-stop(20%, transparent)) 0 1px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.5)), color-stop(20%, transparent)) 8px 9px; background: -webkit-radial-gradient(#efd996 16%, transparent 18%) 0 0, -webkit-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 8px 9px; background: -moz-radial-gradient(#efd996 16%, transparent 18%) 0 0, -moz-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -moz-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 8px 9px; background: -o-radial-gradient(#efd996 16%, transparent 18%) 0 0, -o-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -o-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 0 1px, -o-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 8px 9px; background: -ms-radial-gradient(#efd996 16%, transparent 18%) 0 0, -ms-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -ms-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 0 1px, -ms-radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 8px 9px; background: radial-gradient(#efd996 16%, transparent 18%) 0 0, radial-gradient(#efd996 16%, transparent 18%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 20%) 8px 9px; background-color: #f2e1ac; background-size: 16px 16px; }
+
+/* line 28, ../scss/_global.scss */
+.title.work:before { border-color: #aac3a5; }
+/* line 31, ../scss/_global.scss */
+.title.blog:before { border-color: #a5b9c3; }
+/* line 34, ../scss/_global.scss */
+.title.social:before { border-color: #f29c7b; }
+/* line 37, ../scss/_global.scss */
+.title.about:before { border-color: #f2e1ac; }
+
+/* line 44, ../scss/_global.scss */
+.title { position: relative; margin: 0 0 1.5em 0; padding: 0.5em 0; text-align: center; background: #f29c7b; border-top: 1px solid #fff; border-bottom: 1px solid #666; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); text-shadow: 0 1px 1px white; z-index: 50; }
+/* line 59, ../scss/_global.scss */
+.title:hover { color: #333; }
+/* line 60, ../scss/_global.scss */
+.title:before { content: ""; position: absolute; left: -4px; top: 0; display: block; height: 4em; width: 0px; border-left-width: 5px; border-left-style: solid; -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3); -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3); box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3); }
+@media screen and (min-width: 700px) { /* line 44, ../scss/_global.scss */
+  .title { width: 70%; padding: 0.5em 0 0.5em 12%; color: #333; text-align: left; -webkit-border-radius: 0 20px 20px 0; -moz-border-radius: 0 20px 20px 0; -ms-border-radius: 0 20px 20px 0; -o-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; } }
+@media screen and (min-width: 960px) { /* line 44, ../scss/_global.scss */
+  .title { width: 45%; } }
+
+/* line 91, ../scss/_global.scss */
+.section { position: relative; margin-bottom: 2em; z-index: 10; }
+@media screen and (min-width: 960px) { /* line 97, ../scss/_global.scss */
+  .section:first-of-type { margin-top: -10em; } }
+/* line 100, ../scss/_global.scss */
+.section .inside { padding: 0 12%; }
+@media screen and (min-width: 700px) { /* line 100, ../scss/_global.scss */
+  .section .inside { width: 50%; } }
+@media screen and (min-width: 960px) { /* line 100, ../scss/_global.scss */
+  .section .inside { width: 40%; } }
+
+/* line 112, ../scss/_global.scss */
+.quote { position: relative; margin: 0 0 0.75em; padding: 0.5em 0.5em 0.5em 1em; font-size: 1.5em; border-left: 5px solid #a5b9c3; }
+/* line 121, ../scss/_global.scss */
+.quote p { font-family: "QuicksandLight", "Georgia", "Times New Roman", serif; letter-spacing: -1px; line-height: 1.25em; }
+/* line 125, ../scss/_global.scss */
+.quote p:last-of-type { margin-bottom: 0; }
+/* line 129, ../scss/_global.scss */
+.quote:before { content: ""; position: absolute; top: -0.25em; color: #fef8ea; text-shadow: -1px 0px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 1, ../scss/_header.scss */
+header { position: relative; width: 100%; text-align: center; background: #fefaef; -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); z-index: 8000; }
+/* line 8, ../scss/_header.scss */
+header .main-title { position: relative; padding: 0.5em 0; color: #333; line-height: 1em; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); text-shadow: 0 1px white; background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #efd996), color-stop(18%, transparent)) 0 0, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 18, color-stop(16%, #efd996), color-stop(18%, transparent)) 8px 8px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.6)), color-stop(20%, transparent)) 0 1px, -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 20, color-stop(15%, rgba(255, 255, 255, 0.6)), color-stop(20%, transparent)) 8px 9px; background: -webkit-radial-gradient(#efd996 16%, transparent 18%) 0 0, -webkit-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 8px 9px; background: -moz-radial-gradient(#efd996 16%, transparent 18%) 0 0, -moz-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -moz-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 8px 9px; background: -o-radial-gradient(#efd996 16%, transparent 18%) 0 0, -o-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -o-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 0 1px, -o-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 8px 9px; background: -ms-radial-gradient(#efd996 16%, transparent 18%) 0 0, -ms-radial-gradient(#efd996 16%, transparent 18%) 8px 8px, -ms-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 0 1px, -ms-radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 8px 9px; background: radial-gradient(#efd996 16%, transparent 18%) 0 0, radial-gradient(#efd996 16%, transparent 18%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.6) 15%, transparent 20%) 8px 9px; background-color: #f2e1ac; background-size: 16px 16px; }
+/* line 19, ../scss/_header.scss */
+header .main-title a { display: block; }
+/* line 22, ../scss/_header.scss */
+header .main-title a:hover { color: #000; }
+/* line 26, ../scss/_header.scss */
+header .sub-title { display: block; padding: 1em 0; color: #f29c7b; font-family: "QuicksandLight", "Georgia", "Times New Roman", serif; font-size: 1em; line-height: 1em; text-shadow: 0 1px white; }
+@media screen and (min-width: 960px) { /* line 39, ../scss/_header.scss */
+  header h1, header .sub-title { text-align: left; padding-left: 12%; } }
+
+/* line 78, ../scss/_header.scss */
+.topics { position: relative; min-height: 200px; margin-bottom: 20%; font-family: "QuicksandLight", "Georgia", "Times New Roman", serif; text-shadow: 0 1px white; }
+/* line 85, ../scss/_header.scss */
+.topics .topic { position: absolute; height: 0; color: #000; text-align: center; text-shadow: 0 1px 1px #cccccc; -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); -webkit-transition: all ease-in-out 0.2s; -moz-transition: all ease-in-out 0.2s; -ms-transition: all ease-in-out 0.2s; -o-transition: all ease-in-out 0.2s; transition: all ease-in-out 0.2s; }
+/* line 96, ../scss/_header.scss */
+.topics .topic:hover { color: #000; }
+/* line 98, ../scss/_header.scss */
+.topics .blog { top: 35%; left: 22%; width: 40%; height: 0; padding: 20% 0; font-size: 160%; line-height: 40%; text-shadow: 0px 1px white; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 30; }
+/* line 62, ../scss/_header.scss */
+.topics .blog:hover { width: 42%; height: 0; padding: 21% 0; font-size: 168%; line-height: 42%; background: #fff; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+/* line 104, ../scss/_header.scss */
+.topics .about { top: 0%; left: 45%; width: 28%; height: 0; padding: 14% 0; font-size: 112%; line-height: 28%; text-shadow: 0px 1px white; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 40; }
+/* line 62, ../scss/_header.scss */
+.topics .about:hover { width: 29.4%; height: 0; padding: 14.7% 0; font-size: 117.6%; line-height: 29.4%; background: #fff; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+/* line 110, ../scss/_header.scss */
+.topics .social { top: 25%; left: 65%; width: 35%; height: 0; padding: 17.5% 0; font-size: 140%; line-height: 35%; text-shadow: 0px 1px white; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 20; }
+/* line 62, ../scss/_header.scss */
+.topics .social:hover { width: 36.75%; height: 0; padding: 18.375% 0; font-size: 147%; line-height: 36.75%; background: #fff; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+/* line 116, ../scss/_header.scss */
+.topics .work { top: 10%; left: 0%; width: 30%; height: 0; padding: 15% 0; font-size: 120%; line-height: 30%; text-shadow: 0px 1px white; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 10; }
+/* line 62, ../scss/_header.scss */
+.topics .work:hover { width: 31.5%; height: 0; padding: 15.75% 0; font-size: 126%; line-height: 31.5%; background: #fff; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+@media screen and (min-width: 620px) { /* line 78, ../scss/_header.scss */
+  .topics { margin-bottom: 0; font-size: 2em; }
+  /* line 128, ../scss/_header.scss */
+  .topics .blog { top: 9%; left: 14%; width: 20%; height: 0; padding: 10% 0; font-size: 80%; line-height: 20%; text-shadow: 0px 1px white; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  /* line 62, ../scss/_header.scss */
+  .topics .blog:hover { width: 21%; height: 0; padding: 10.5% 0; font-size: 84%; line-height: 21%; background: #fff; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 133, ../scss/_header.scss */
+  .topics .about { top: 4%; left: 30%; width: 14%; height: 0; padding: 7% 0; font-size: 56%; line-height: 14%; text-shadow: 0px 1px white; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  /* line 62, ../scss/_header.scss */
+  .topics .about:hover { width: 14.7%; height: 0; padding: 7.35% 0; font-size: 58.8%; line-height: 14.7%; background: #fff; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 138, ../scss/_header.scss */
+  .topics .social { left: 40%; width: 14%; height: 0; padding: 7% 0; font-size: 56%; line-height: 14%; text-shadow: 0px 1px white; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  /* line 62, ../scss/_header.scss */
+  .topics .social:hover { width: 14.7%; height: 0; padding: 7.35% 0; font-size: 58.8%; line-height: 14.7%; background: #fff; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 142, ../scss/_header.scss */
+  .topics .work { left: 2%; width: 15%; height: 0; padding: 7.5% 0; font-size: 60%; line-height: 15%; text-shadow: 0px 1px white; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  /* line 62, ../scss/_header.scss */
+  .topics .work:hover { width: 15.75%; height: 0; padding: 7.875% 0; font-size: 63%; line-height: 15.75%; background: #fff; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); } }
+@media screen and (min-width: 700px) { /* line 78, ../scss/_header.scss */
+  .topics { margin-bottom: 1em; } }
+@media screen and (min-width: 960px) { /* line 78, ../scss/_header.scss */
+  .topics { margin: -1em 0 0; font-size: 3em; }
+  /* line 159, ../scss/_header.scss */
+  .topics .topic { left: 80%; }
+  /* line 160, ../scss/_header.scss */
+  .topics .blog { top: 0; width: 10%; height: 0; padding: 5% 0; font-size: 40%; line-height: 10%; text-shadow: 0px 1px white; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 40; }
+  /* line 62, ../scss/_header.scss */
+  .topics .blog:hover { width: 10.5%; height: 0; padding: 5.25% 0; font-size: 42%; line-height: 10.5%; background: #fff; border: 1px solid #737373; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 165, ../scss/_header.scss */
+  .topics .about { top: 55%; width: 10%; height: 0; padding: 5% 0; font-size: 40%; line-height: 10%; text-shadow: 0px 1px white; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 30; }
+  /* line 62, ../scss/_header.scss */
+  .topics .about:hover { width: 10.5%; height: 0; padding: 5.25% 0; font-size: 42%; line-height: 10.5%; background: #fff; border: 1px solid #939393; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 170, ../scss/_header.scss */
+  .topics .social { top: 165%; width: 10%; height: 0; padding: 5% 0; font-size: 40%; line-height: 10%; text-shadow: 0px 1px white; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  /* line 62, ../scss/_header.scss */
+  .topics .social:hover { width: 10.5%; height: 0; padding: 5.25% 0; font-size: 42%; line-height: 10.5%; background: #fff; border: 1px solid #999999; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); }
+  /* line 174, ../scss/_header.scss */
+  .topics .work { top: 110%; width: 10%; height: 0; padding: 5% 0; font-size: 40%; line-height: 10%; text-shadow: 0px 1px white; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; z-index: 20; }
+  /* line 62, ../scss/_header.scss */
+  .topics .work:hover { width: 10.5%; height: 0; padding: 5.25% 0; font-size: 42%; line-height: 10.5%; background: #fff; border: 1px solid #6c6c6c; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5); } }
+
+/* line 183, ../scss/_header.scss */
+.banner { position: absolute; top: -280px; right: 25%; width: 100px; padding: 20px 20px 80px; font-size: 14px; background: #fff; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -webkit-transition: ease 0.5s; -moz-transition: ease 0.5s; -ms-transition: ease 0.5s; -o-transition: ease 0.5s; transition: ease 0.5s; }
+/* line 198, ../scss/_header.scss */
+.banner:before { content: ""; position: absolute; left: 0; bottom: -105px; width: 144px; height: 100px; background: #fefaef; -webkit-box-shadow: 0px -10px 30px #fefaef; -moz-box-shadow: 0px -10px 30px #fefaef; box-shadow: 0px -10px 30px #fefaef; z-index: 10; }
+/* line 213, ../scss/_header.scss */
+.banner:after { content: ""; position: absolute; bottom: -52px; left: 50% -50px; width: 100px; height: 100px; background: #fefaef; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.3); z-index: 0; }
+/* line 228, ../scss/_header.scss */
+.banner .nosey { position: absolute; bottom: -160px; text-align: center; opacity: 0; -webkit-transform: rotate(-10deg); -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; z-index: 20; }
+/* line 241, ../scss/_header.scss */
+.banner .nosey .arrow { position: relative; left: 25px; display: block; width: 50px; height: 50px; margin: -25px 0 0 40px; border-radius: 30px; border-left: 1px solid #666666; -webkit-transform: rotate(-50deg); -moz-transform: rotate(-50deg); -ms-transform: rotate(-50deg); -o-transform: rotate(-50deg); transform: rotate(-50deg); }
+/* line 253, ../scss/_header.scss */
+.banner .nosey .arrow:after { content: ""; display: block; position: absolute; bottom: -6px; left: 15px; width: 0px; height: 0px; border-right: 7px solid #666666; border-left: 7px solid transparent; border-top: 7px solid transparent; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+/* line 267, ../scss/_header.scss */
+.banner .nosey .arrow:before { content: ""; display: block; position: absolute; left: -2px; top: 0px; width: 15px; height: 15px; background: #fefaef; border: none; }
+@media screen and (min-width: 960px) { /* line 183, ../scss/_header.scss */
+  .banner { top: 0px; }
+  /* line 284, ../scss/_header.scss */
+  .banner .nosey { opacity: 1; } }
+
+/* line 1, ../scss/_footer.scss */
+footer { width: 100%; height: 100px; padding: 1.5em 0; color: #333; font-size: 10px; text-align: center; border-top: 1px solid #cccccc; background: #fbebbf; }
+@media screen and (min-width: 960px) { /* line 13, ../scss/_footer.scss */
+  footer p { text-align: left; margin-left: 12%; } }
+
+/* line 20, ../scss/_footer.scss */
+.footer-links { display: block; margin: 0 auto 3em; }
+@media screen and (min-width: 960px) { /* line 20, ../scss/_footer.scss */
+  .footer-links { width: auto; margin: 0 0 3em 12%; } }
+/* line 29, ../scss/_footer.scss */
+.footer-links li { float: none; display: block; text-align: center; }
+@media screen and (min-width: 960px) { /* line 29, ../scss/_footer.scss */
+  .footer-links li { float: left; clear: none; display: inline-block; margin-right: 1em; text-align: left; } }
+/* line 45, ../scss/_footer.scss */
+.footer-links [class^=icon] { color: #666; font-size: 1.25em; }
+
+/* line 50, ../scss/_footer.scss */
+.to-top { margin: -4em 4em 0 0; }
+
+/**************************
+	$$ Post Comments Bubble 
+**************************/
+/* line 5, ../scss/_comments.scss */
+.post-title:after { content: attr(data-comments); position: absolute; right: -40px; bottom: -20px; width: 40px; height: 40px; line-height: 40px; color: #f29c7b; font-size: 20px; text-align: center; border: 1px solid #ccc; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+
+/**************************
+	$$ Comments Thread
+**************************/
+/* line 29, ../scss/_comments.scss */
+.comments-title [class^=icon] { margin: 5px 0 0 -62px; font-size: 50px; color: #fef8ea; text-shadow: -1px 0px 1px rgba(0, 0, 0, 0.3); }
+
+/* line 36, ../scss/_comments.scss */
+.commentlist { list-style: none; margin: 0; padding: 0; }
+/* line 48, ../scss/_comments.scss */
+.commentlist .comment { margin: 0 0 1.5em; }
+/* line 51, ../scss/_comments.scss */
+.commentlist .comment .comment-author { width: 110%; margin-bottom: 1.5em; border-bottom: 1px solid #ccc; }
+/* line 58, ../scss/_comments.scss */
+.commentlist .comment .avatar { float: right; margin: 0 0 0 50px; padding: 10px; background: #fefaef; border: 1px solid #ccc; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+/* line 70, ../scss/_comments.scss */
+.commentlist .comment .commentmetadata { margin: -2em 0 1.5em; font-size: 0.75em; }
+/* line 75, ../scss/_comments.scss */
+.commentlist .comment p, .commentlist .comment .reply { padding: 0 0.5em; }
+/* line 79, ../scss/_comments.scss */
+.commentlist .comment .children { list-style: none; margin: 0; }
+/* line 83, ../scss/_comments.scss */
+.commentlist .comment .children li { margin: 1em 0; }
+/* line 97, ../scss/_comments.scss */
+.commentlist .comment .children li:last-of-type { margin-bottom: 0; }
+
+/**************************
+	$$ Comments Form
+**************************/
+/* line 116, ../scss/_comments.scss */
+.comments-form .login-status { margin: -2em 0 3em; font-size: 0.75em; }
+/* line 120, ../scss/_comments.scss */
+.comments-form .form-footer { float: right; width: auto; }
+
+/* line 1, ../scss/_blog.scss */
+.blog-post { margin-bottom: 2.5em; }
+@media screen and (min-width: 700px) { /* line 1, ../scss/_blog.scss */
+  .blog-post { left: -2em; }
+  /* line 6, ../scss/_blog.scss */
+  .blog-post .code { margin-left: 24%; } }
+/* line 9, ../scss/_blog.scss */
+.blog-post:last-of-type { margin-bottom: 0.5em; }
+/* line 13, ../scss/_blog.scss */
+.blog-post img { margin: 1.5em 0; border-top: 1px solid #ccc; border-bottom: 1px solid #333; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
+/* line 22, ../scss/_blog.scss */
+.blog-post figure img { margin-bottom: 0.5em; }
+/* line 23, ../scss/_blog.scss */
+.blog-post figcaption { margin: 0 0 1.5em; font-size: 0.875em; font-family: "Quicksand", "Georgia", "Times New Roman", serif; text-align: center; }
+
+/* line 32, ../scss/_blog.scss */
+.post-title { position: relative; width: 100%; padding: 0 0 0.5em; color: #333; border-bottom: 1px solid #ccc; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 100; }
+
+/* line 44, ../scss/_blog.scss */
+.post-meta { display: block; margin: -1em 0 3em; font-style: italic; }
+/* line 49, ../scss/_blog.scss */
+.post-meta .author { font-style: normal; }
+
+/* line 52, ../scss/_blog.scss */
+.tldr { margin: -1.5em 0 3em; padding: 1.5em; font-size: 0.75em; border: 1px solid #ccc; }
+/* line 59, ../scss/_blog.scss */
+.tldr .img { font-size: 1.25em; font-family: Consolas, Monaco, 'Andale Mono', monospace; }
+
+/* line 66, ../scss/_blog.scss */
+.post-quote p { color: #f29c7b; }
+/* line 69, ../scss/_blog.scss */
+.post-quote p:before, .post-quote p:after { content: "\2026"; }
+/* line 73, ../scss/_blog.scss */
+.post-quote:before { content: "\f004"; font-family: IcoMoon; top: -0.35em; left: -1em; font-size: 3em; }
+
+/* line 82, ../scss/_blog.scss */
+.site-search { position: relative; width: 100%; margin: 3em 0 1.5em; }
+/* line 86, ../scss/_blog.scss */
+.site-search .search-form { display: block; width: 100%; }
+/* line 90, ../scss/_blog.scss */
+.site-search input[type=search] { width: 90%; padding: 0.5em 0.25em 0.5em 0.5em; }
+/* line 94, ../scss/_blog.scss */
+.site-search input[type=submit] { position: absolute; right: -1em; top: -1em; }
+/* line 99, ../scss/_blog.scss */
+.site-search input[type=submit]:focus { outline: none; }
+
+/* line 102, ../scss/_blog.scss */
+.search-form { display: none; float: left; margin: -0.5em 0; }
+
+/**************************
+	$$ Work
+**************************/
+/* line 5, ../scss/_work.scss */
+.gallery { padding: 1.5em 0; }
+/* line 7, ../scss/_work.scss */
+.gallery article { float: left; width: 200px; margin: 0.5em; }
+@media screen and (min-width: 400px) { /* line 7, ../scss/_work.scss */
+  .gallery article { width: 40%; margin: 2.5% 5%; } }
+@media screen and (min-width: 700px) { /* line 7, ../scss/_work.scss */
+  .gallery article { width: 44%; margin: 2% 1%; } }
+/* line 21, ../scss/_work.scss */
+.gallery a { display: block; font-size: 0.75em; text-align: center; }
+
+/* line 27, ../scss/_work.scss */
+.screenshot { margin-bottom: 0.5em; border: 5px solid #fff; -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); }
+/* line 32, ../scss/_work.scss */
+.screenshot:hover { -webkit-transform: scale(1.05, 1.05); -moz-transform: scale(1.05, 1.05); -ms-transform: scale(1.05, 1.05); -o-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05); -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3); }
+
+/**************************
+	$$ Social
+**************************/
+/* line 5, ../scss/_social.scss */
+.social-nav { margin-left: 0; }
+/* line 7, ../scss/_social.scss */
+.social-nav li { margin-bottom: 0.5em; }
+/* line 10, ../scss/_social.scss */
+.social-nav [class^="icon"] { font-size: 1.25em; }
+
+/* line 14, ../scss/_social.scss */
+.tweet:before { content: "\f099"; top: 0; left: -1.25em; font-family: IcoMoon; font-size: 3em; }
+/* line 21, ../scss/_social.scss */
+.tweet .tweet-meta { font-size: 0.65em; }
+
+/* line 24, ../scss/_social.scss */
+.social-section { padding-bottom: 4em; }
+
+/* line 4, ../scss/_iconfont.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: IcoMoon; font-weight: normal; font-style: normal; display: inline-block; text-decoration: inherit; }
+
+/* line 13, ../scss/_iconfont.scss */
+a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
+
+/* makes the font 33% larger relative to the icon container */
+/* line 19, ../scss/_iconfont.scss */
+.icon-large:before { vertical-align: middle; font-size: 4/3em; }
+
+/* line 26, ../scss/_iconfont.scss */
+.btn [class^="icon-"], .btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] { /* keeps button heights with and without icons the same */ line-height: .9em; }
+
+/* line 34, ../scss/_iconfont.scss */
+li [class^="icon-"], li [class*=" icon-"] { display: inline-block; width: 1.25em; text-align: center; }
+/* line 40, ../scss/_iconfont.scss */
+li .icon-large:before, li .icon-large:before { /* 1.5 increased font size for icon-large * 1.25 width */ width: 1.875em; }
+
+/* line 46, ../scss/_iconfont.scss */
+ul.icons { list-style-type: none; margin-left: 2em; text-indent: -0.8em; }
+/* line 53, ../scss/_iconfont.scss */
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] { width: .8em; }
+/* line 57, ../scss/_iconfont.scss */
+ul.icons li .icon-large:before, ul.icons li .icon-large:before { /* 1.5 increased font size for icon-large * 1.25 width */ vertical-align: initial; }
+
+/* line 67, ../scss/_iconfont.scss */
+.icon-search:before { content: "\f002"; }
+
+/* line 68, ../scss/_iconfont.scss */
+.icon-fork:before { content: "\f003"; }
+
+/* line 69, ../scss/_iconfont.scss */
+.icon-quotes:before { content: "\f004"; }
+
+/* line 70, ../scss/_iconfont.scss */
+.icon-house:before { content: "\f005"; }
+
+/* line 71, ../scss/_iconfont.scss */
+.icon-archive:before { content: "\f006"; }
+
+/* line 72, ../scss/_iconfont.scss */
+.icon-category:before { content: "\f007"; }
+
+/* line 73, ../scss/_iconfont.scss */
+.icon-cog:before { content: "\f013"; }
+
+/* line 74, ../scss/_iconfont.scss */
+.icon-codepen:before { content: "\f029"; }
+
+/* line 75, ../scss/_iconfont.scss */
+.icon-pencil:before { content: "\f040"; }
+
+/* line 76, ../scss/_iconfont.scss */
+.icon-question-sign:before { content: "\f059"; }
+
+/* line 77, ../scss/_iconfont.scss */
+.icon-calendar:before { content: "\f073"; }
+
+/* line 78, ../scss/_iconfont.scss */
+.icon-comment:before { content: "\0021"; }
+
+/* line 79, ../scss/_iconfont.scss */
+.icon-twitter:before { content: "\f099"; }
+
+/* line 80, ../scss/_iconfont.scss */
+.icon-github:before { content: "\f09b"; }
+
+/**************************
+	$$ Prism
+**************************/
+/* line 8, ../scss/_prism.scss */
+code[class*="language"], pre[class*="language"] { color: #f29c7b; background: none; font-size: 0.95em; font-family: Consolas, Monaco, 'Andale Mono', monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-wrap: normal; text-shadow: 0 1px black; -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; }
+
+/* Code blocks */
+/* line 33, ../scss/_prism.scss */
+pre[class*="language"] { width: auto; padding: 1em; margin: .5em 0; overflow: scroll; -webkit-overflow-scrolling: touch; }
+
+/* line 40, ../scss/_prism.scss */
+code[class*="language"] { width: auto; }
+
+/* line 45, ../scss/_prism.scss */
+:not(pre) > code[class*="language"], pre[class*="language"] { margin: 0 0 1.5em; background: #444; border-top: 2px solid #222; border-bottom: 2px solid #fff; -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em; border-radius: 1em; -webkit-box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.3); box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.3); }
+
+/* plain code */
+/* line 57, ../scss/_prism.scss */
+code[class*="language"].plain, code[class*="language"].plain span { color: #fff; }
+
+/* Inline code */
+/* line 62, ../scss/_prism.scss */
+:not(pre) > code[class*="language"] { padding: .1em; border-radius: .3em; }
+
+/* line 70, ../scss/_prism.scss */
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #999; }
+
+/* line 74, ../scss/_prism.scss */
+.token.punctuation { color: #fff; }
+
+/* line 78, ../scss/_prism.scss */
+.namespace { opacity: .7; }
+
+/* line 87, ../scss/_prism.scss */
+.token.operator, .token.property, .token.tag, .token.boolean, .token.number, .token.keyword { color: #f2e1ac; }
+
+/* line 92, ../scss/_prism.scss */
+.token.selector, .token.attr-name { color: #a5b9c3; }
+
+/* line 101, ../scss/_prism.scss */
+.token.entity, .token.url, .token.string, .language-css .token.string, .style .token.string, .token.attr-value { color: #aac3a5; }
+
+/* line 105, ../scss/_prism.scss */
+.token.atrule { color: #f29c7b; }
+
+/* line 111, ../scss/_prism.scss */
+.token.regex, .token.important { color: #fefaef; }
+
+/* line 115, ../scss/_prism.scss */
+.token.important { font-weight: bold; }
+
+/* line 119, ../scss/_prism.scss */
+.token.entity { cursor: help; }

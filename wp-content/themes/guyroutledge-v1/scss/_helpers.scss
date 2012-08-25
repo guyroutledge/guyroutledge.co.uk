@@ -1,0 +1,69 @@
+/************************
+    Helper Classes
+************************/
+
+.fl { float:left; } // use sparingly only on modules
+.fr { float:right; } // use sparingly only on modules
+
+.first { margin-left:0!important; }
+.last { margin-right:0!important; }
+.no-margin { margin:0; }
+.mt { margin-top:1.5em; }
+.mb { margin-bottom:1.5em; }
+
+.indent { margin-left:1.5em!important; }
+.flush { margin-left:0!important; }
+.bullets { list-style-type:$ul; }
+
+.brand-color { color:$color-brand; }
+.brand-font { font-family:$font-brand; text-transform:none; }
+.copy-font { font-family:$font-copy; text-transform:none; }
+.caption { font-style:italic; }
+
+.screen-reader-text {
+    position:absolute;
+    left:-9999em;
+}
+
+.has-layout { zoom:1; } // use for debugging only
+
+
+/* ideal for form inputs, label widths and paragraphs */
+.span-100 { width:100%; }
+.span-90 { width:90%; }
+.span-80 { width:80%; }
+.span-70 { width:70%; }
+.span-60 { width:60%; }
+.span-50 { width:50%; }
+.span-40 { width:40%; }
+.span-30 { width:30%; }
+.span-20 { width:20%; }
+.span-10 { width:10%; }
+
+
+/* classes to toggle state with JS */
+
+.is-visible { display:block!important; } // use instead of .show()
+.is-hidden { display:none!important; } // use instead of .hide()
+
+.is-collapsed { height:0px; }
+.is-expanded { height:auto; }
+
+
+/* group aka clearfix */
+
+.group:before,
+.group:after,
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.group:after,
+.clearfix:after {
+    clear:both;
+}
+.group,
+.clearfix {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}

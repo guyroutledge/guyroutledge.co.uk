@@ -1,0 +1,37 @@
+/***********************
+	Variables
+***********************/
+
+// colours
+
+// text
+$color-brand:#f29c7b;
+$color-link:darken(#f29c7b, 20%);
+$color-hover:#f29c7b;
+$color-heading:#333;
+$color-copy:#666;
+
+// additional colours
+$color-pink:#f29c7b;
+$color-green:#aac3a5;
+$color-light-blue:#a5b9c3;
+$color-yellow:#f2e1ac;
+$color-lightest:#fefaef;
+
+// skin
+$color-border:#ccc;
+$color-form:#fff;
+
+// font-family
+$font-brand:'Quicksand','Georgia','Times New Roman',serif;
+$font-brand-light:'QuicksandLight','Georgia','Times New Roman',serif;
+$font-copy:'Nobile','Arial',sans-serif;
+
+// list style types
+$ul: disc;
+$ol: decimal;
+
+// shadow
+
+$shadow-lg:0px 5px 40px rgba(0,0,0,0.3);
+$shadow-sm:0px 5px 10px rgba(0,0,0,0.3);

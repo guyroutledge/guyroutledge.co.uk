@@ -1,0 +1,124 @@
+/**************************
+	$$ Post Comments Bubble 
+**************************/
+
+.post-title:after {
+	content:attr(data-comments);
+
+	position:absolute;
+	right:-40px;
+	bottom:-20px;
+
+	width:40px;
+	height:40px;
+	line-height:40px;
+
+	color:$color-pink;
+	font-size:20px;
+	text-align:center;
+
+	border:1px solid #ccc;
+	@include border-radius(100%);
+}
+
+
+/**************************
+	$$ Comments Thread
+**************************/
+
+.comments-title [class^=icon] { 
+	margin:5px 0 0 -62px;
+	font-size:50px;
+	color:darken($color-lightest,1%);
+	@include text-shadow(-1px 0px 1px rgba(0,0,0,0.3));
+}
+
+.commentlist { 
+	list-style: none;
+	margin:0;
+	padding:0;
+	
+	li {
+
+		&.alt { }
+		&.bypostauthor { }
+		&.byuser { }
+		&.comment-author-admin { }
+	}
+	.comment {
+		margin:0 0 1.5em;
+
+		.comment-author { 
+			width:110%;
+			margin-bottom:1.5em;
+
+			border-bottom:1px solid #ccc;
+		}
+
+		.avatar { 
+			float:right; 
+			margin:0 0 0 50px; 
+			padding:10px;
+
+			background:$color-lightest;
+			border:1px solid #ccc;
+			@include border-radius(100%);
+		}
+		.photo { }
+		.says { }
+
+		.commentmetadata { 
+			margin:-2em 0 1.5em;
+			font-size:0.75em; 
+		}
+
+		p, .reply { padding:0 0.5em; }
+		
+		ul { }
+		.reply { }
+		.children {
+			list-style:none;
+			margin:0;
+
+			li {
+				margin:1em 0;
+
+				&.alt { }
+				&.bypostauthor { }
+				&.byuser { }
+				&.comment-author-admin { }
+				&.comment { }
+				&.depth-2 { }
+				&.depth-3 { }
+				&.depth-4 { }
+				&.depth-5 { }
+				&.odd { }
+
+				&:last-of-type { margin-bottom:0; }
+			}
+
+		}
+		.even { }
+		.odd { }
+		.parent { }
+		.thread-alt { }
+		.thread-even { }
+		.thread-odd { }
+	}
+}
+
+/**************************
+	$$ Comments Form
+**************************/
+
+
+.comments-form {
+	.login-status { 
+		margin:-2em 0 3em;
+		font-size:0.75em; 
+	}
+	.form-footer {
+		float:right;
+		width:auto;
+	}
+}

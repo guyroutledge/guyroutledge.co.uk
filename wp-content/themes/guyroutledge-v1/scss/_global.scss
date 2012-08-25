@@ -1,0 +1,138 @@
+* {
+	@include transition(ease 0.55s);
+}
+
+a, a * {
+	@include transition(ease 0.3s);
+}
+
+.inner-wrap { max-width:1200px; margin:0 auto; }
+
+// Topics and Titles 
+
+.title, .topic {
+	&.work {
+		@include pattern-bg($color-green, 3%, 0.3);
+	}
+	&.blog {
+		@include pattern-bg($color-light-blue, 3%, 0.3);
+	}
+	&.social {
+		@include pattern-bg($color-pink, 3%, 0.3);
+	}
+	&.about {
+		@include pattern-bg($color-yellow, 5%, 0.5);
+	}
+}
+.title {
+	&.work:before {
+		border-color:$color-green;
+	}
+	&.blog:before {
+		border-color:$color-light-blue;
+	}
+	&.social:before {
+		border-color:$color-pink;
+	}
+	&.about:before {
+		border-color:$color-yellow;
+	}
+}
+
+// Titles
+
+.title {
+	position:relative;
+	margin:0 0 1.5em 0;
+	padding:0.5em 0;
+	
+	text-align:center;
+
+	background:$color-brand; 
+	border-top:1px solid #fff;
+	border-bottom:1px solid #666;
+
+	@include box-shadow($shadow-sm);
+	@include text-shadow(0 1px 1px #fff);
+	z-index:50;
+
+	&:hover { color:#333; }
+	&:before { 
+		content:"";
+		position:absolute;
+		left:-4px;
+		top:0;
+		
+		display:block;
+		height:4em;
+		width:0px;
+
+		border-left-width:5px;
+		border-left-style:solid;
+		@include box-shadow(2px 5px 15px rgba(0,0,0,0.3));
+	}
+
+	@media screen and (min-width:700px) {
+		width:70%;
+		padding:0.5em 0 0.5em 12%;
+		
+		color:#333;
+		text-align:left;
+
+		@include border-radius(0 20px 20px 0)
+	}
+	@media screen and (min-width:960px) {
+		width:45%;
+	}
+}
+
+// Content Sections
+
+.section {
+	position:relative;
+	margin-bottom:2em;
+	z-index:10;
+	
+	@media screen and (min-width:960px) {
+		&:first-of-type { margin-top:-10em; }
+	}
+
+	.inside { 
+		padding:0 12%; 
+
+		@media screen and (min-width:700px) {
+			width:50%;
+		}
+		@media screen and (min-width:960px) {
+ 			width:40%; 
+ 		}
+	}
+}
+
+.quote {
+	position:relative;
+
+	margin:0 0 0.75em;
+	padding:0.5em 0.5em 0.5em 1em;
+	
+	font-size:1.5em;
+	border-left:5px solid $color-light-blue;
+
+	p { 
+		font-family:$font-brand-light; 
+		letter-spacing:-1px;
+		line-height:1.25em;
+		&:last-of-type { margin-bottom:0; }
+	}
+	
+
+	&:before {
+		content:"";
+		position:absolute;
+ 		top:-0.25em;
+
+		color:darken($color-lightest,1%);
+		@include text-shadow(-1px 0px 1px rgba(0,0,0,0.3));
+	}
+}
+

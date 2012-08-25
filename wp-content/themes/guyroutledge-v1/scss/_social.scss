@@ -1,0 +1,26 @@
+/**************************
+	$$ Social
+**************************/
+
+.social-nav {
+	margin-left:0;
+	li {
+		margin-bottom:0.5em;
+	}
+	[class^="icon"] { font-size:1.25em; }
+}
+
+.tweet {
+	&:before {
+		content:"\f099"; // twitter icon
+		top:0;
+		left:-1.25em;
+		font-family: IcoMoon;
+		font-size:3em;
+	}
+	.tweet-meta { font-size:0.65em; }
+}
+
+.social-section {
+	padding-bottom:4em;
+}

@@ -1,0 +1,80 @@
+/*************************
+	Modules
+*************************/
+
+/* the imgblock module aka media-block */
+/* use whereever you have an image/icon/media floated next to a block of content
+
+/* READ THIS:
+/* www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ */
+
+.imgblock {
+    .img {
+        float:left;
+        margin:0 20px 0 0;
+        img {
+            display:block;
+        }
+    }
+    /*
+     * 1. Create new block formatting context in modern browsers
+     * 2. Avoid shrink-wrap behaviour of table-cell
+     * 3. Override for IE6/7
+     * 4. Trigger hasLayout for block formatting context in IE6/7
+    */
+    .content {
+        display:table-cell; /* 1 */
+        width:10000px; /* 2 */
+        *width:auto; /* 3 */
+        *zoom:1; /* 4 */
+    }
+    &.flipped {
+        .img { float:right; margin:0 0 0 20px; }
+    }
+}
+
+/* nav module */
+.nav {
+    list-style:none;
+    li {
+        position:relative;
+        float:left;
+        display:block;
+    }
+}
+.stacked {
+    li {
+        clear:both;
+        display:block;
+    }
+}
+
+.button {
+    display:inline-block;
+    width:65px;
+    height:65px;
+    margin:0 0 0 5px;
+    @include box-sizing('border-box');
+
+    text-align:center;
+    
+    border-left:none;
+    border-right:none;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #666;
+    @include border-radius(100%);
+    @include box-shadow($shadow-sm);
+    -webkit-appearance:none;
+
+    &.submit {
+
+        background:$color-light-blue;
+        @include text-shadow(0 1px #fff);
+        @include transition(0.3s ease);
+
+        z-index:11000;
+        &:hover {
+            background:$color-green;
+        }
+    }
+}
