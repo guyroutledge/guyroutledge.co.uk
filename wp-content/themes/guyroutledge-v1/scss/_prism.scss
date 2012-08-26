@@ -34,7 +34,7 @@ pre[class*="language"] {
 	width:auto;
 	padding: 1em;
 	margin: .5em 0;
-	overflow: scroll;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;	
 }
 code[class*="language"] { 
