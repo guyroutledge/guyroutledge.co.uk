@@ -88,7 +88,7 @@
 					<p class="allowed-tags">
 						You can use code in comments:<br>
 						Wrap inline code in <span>&lt;code&gt;&lt;/code&gt;</span> tags<br>
-						Wrap block code in <span>&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;pre&gt;</span> tags<br>
+						Wrap block code in <span>&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</span> tags<br>
 						Add <span>&lt;code class="language-|css|markup|javascript"&lt;/code&gt;</span> for highlighting.
 					</p>
 				</label>
