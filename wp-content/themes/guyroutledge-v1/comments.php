@@ -84,7 +84,14 @@
 			<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
 
 			<li>
-				<label for="comment">Comment <?php if ( $req ) echo "<span class='required'>*</span>" ?></label>
+				<label for="comment">Comment <?php if ( $req ) echo "<span class='required'>*</span>" ?><br>
+					<p class="allowed-tags">
+						You can use code in comments:<br>
+						Wrap inline code in <span>&lt;code&gt;&lt;/code&gt;</span> tags<br>
+						Wrap block code in <span>&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;pre&gt;</span> tags<br>
+						Add <span>&lt;code class="language-|css|markup|javascript"&lt;/code&gt;</span> for highlighting.
+					</p>
+				</label>
 				<textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea>
 			</li>
 
