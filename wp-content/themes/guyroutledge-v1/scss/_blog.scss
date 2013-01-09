@@ -65,10 +65,6 @@
 .post-quote {
 	p {
 		color:$color-pink;
-
-		&:before, &:after {
-			content:"\2026"; // &hellip;
-		}
 	}
 	&:before {
 		content: "\f004"; // twitter
