@@ -34,7 +34,7 @@
 </head>
 <body <?php body_class() ?>>
 
-		<header>
+		<header class="site-header">
 			<div class="main-title">
 				<div class="inner-wrap">
 					<h1 class="no-margin"><a href="/"><?php bloginfo('name') ?></a></h1>

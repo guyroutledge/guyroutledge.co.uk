@@ -1,5 +1,5 @@
 		</div> <!-- end .page-wrap -->
-		<footer>
+		<footer class="site-footer">
 			<div class="inner-wrap">
 				<p>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></p>
 				<ul class="nav stacked footer-links group">

@@ -1,4 +1,4 @@
-header {
+.site-header {
 	position:relative;
 	width:100%;
 	text-align:center;
@@ -14,7 +14,7 @@ header {
 		line-height:1em;
 
 		background:$color-yellow;
-		@include text-shadow(0 1px #fff);
+
 		a {
 			display:block;
 		}
