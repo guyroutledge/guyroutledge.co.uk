@@ -47,7 +47,6 @@ pre[class*="language"] {
 
 	background: #444;
 	border-bottom:2px solid #fff;
-	@include border-radius(1em);
 }
 
 /* plain code */
@@ -59,7 +58,6 @@ code[class*="language"].plain span {
 /* Inline code */
 :not(pre) > code[class*="language"] {
 	padding: .1em;
-	border-radius: .3em;
 }
 
 .token.comment,
