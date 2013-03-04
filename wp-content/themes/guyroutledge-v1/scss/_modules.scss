@@ -57,19 +57,14 @@
     @include box-sizing('border-box');
 
     text-align:center;
-    
-    border-left:none;
-    border-right:none;
-    border-top:1px solid #fff;
-    border-bottom:1px solid #666;
+
+	border:none;
     @include border-radius(100%);
-    @include box-shadow($shadow-sm);
     -webkit-appearance:none;
 
     &.submit {
 
         background:$color-light-blue;
-        @include text-shadow(0 1px #fff);
         @include transition(0.3s ease);
 
         z-index:11000;
