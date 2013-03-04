@@ -65,6 +65,10 @@ a, a * {
 
 		border-left-width:5px;
 		border-left-style:solid;
+
+		@media screen and (max-width:1200px) {
+			display:none;
+		}
 	}
 
 	@media screen and (min-width:700px) {
