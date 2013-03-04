@@ -8,20 +8,20 @@ a, a * {
 
 .inner-wrap { max-width:1200px; margin:0 auto; }
 
-// Topics and Titles 
+// Topics and Titles
 
-.title, .topic {
+.title {
 	&.work {
-		@include pattern-bg($color-green, 3%, 0.3);
+		background:$color-green;
 	}
 	&.blog {
-		@include pattern-bg($color-light-blue, 3%, 0.3);
+		background:$color-light-blue;
 	}
 	&.social {
-		@include pattern-bg($color-pink, 3%, 0.3);
+		background:$color-pink;
 	}
 	&.about {
-		@include pattern-bg($color-yellow, 5%, 0.5);
+		background:$color-yellow;
 	}
 }
 .title {
@@ -45,41 +45,35 @@ a, a * {
 	position:relative;
 	margin:0 0 1.5em 0;
 	padding:0.5em 0;
-	
+
 	text-align:center;
 
-	background:$color-brand; 
-	border-top:1px solid #fff;
-	border-bottom:1px solid #666;
+	background:$color-brand;
 
-	@include box-shadow($shadow-sm);
-	@include text-shadow(0 1px 1px #fff);
 	z-index:50;
 
 	&:hover { color:#333; }
-	&:before { 
+	&:before {
 		content:"";
 		position:absolute;
-		left:-4px;
+		left:0;
 		top:0;
-		
+
 		display:block;
 		height:4em;
 		width:0px;
 
 		border-left-width:5px;
 		border-left-style:solid;
-		@include box-shadow(2px 5px 15px rgba(0,0,0,0.3));
 	}
 
 	@media screen and (min-width:700px) {
 		width:70%;
-		padding:0.5em 0 0.5em 12%;
-		
+		padding:0.25em 0 0.25em 12%;
+
 		color:#333;
 		text-align:left;
 
-		@include border-radius(0 20px 20px 0)
 	}
 	@media screen and (min-width:960px) {
 		width:45%;
@@ -92,19 +86,19 @@ a, a * {
 	position:relative;
 	margin-bottom:2em;
 	z-index:10;
-	
+
 	@media screen and (min-width:960px) {
 		&:first-of-type { margin-top:-10em; }
 	}
 
-	.inside { 
-		padding:0 12%; 
+	.inside {
+		padding:0 12%;
 
 		@media screen and (min-width:700px) {
 			width:50%;
 		}
 		@media screen and (min-width:960px) {
- 			width:40%; 
+ 			width:40%;
  		}
 	}
 }
@@ -114,17 +108,17 @@ a, a * {
 
 	margin:0 0 0.75em;
 	padding:0.5em 0.5em 0.5em 1em;
-	
+
 	font-size:1.5em;
 	border-left:5px solid $color-light-blue;
 
-	p { 
-		font-family:$font-brand-light; 
+	p {
+		font-family:$font-brand-light;
 		letter-spacing:-1px;
 		line-height:1.25em;
 		&:last-of-type { margin-bottom:0; }
 	}
-	
+
 
 	&:before {
 		content:"";
@@ -132,7 +126,6 @@ a, a * {
  		top:-0.25em;
 
 		color:darken($color-lightest,1%);
-		@include text-shadow(-1px 0px 1px rgba(0,0,0,0.3));
 	}
 }
 
