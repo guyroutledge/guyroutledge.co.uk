@@ -1,22 +1,21 @@
-header {
+.site-header {
 	position:relative;
 	width:100%;
 	text-align:center;
 	background:$color-lightest;
-	@include box-shadow($shadow-lg);
+	border-bottom:1px solid #ccc;
 	z-index:8000;
 	.main-title {
 		position:relative;
-		
+
 		padding:0.5em 0;
 
 		color:#333;
 		line-height:1em;
-		
-		@include box-shadow($shadow-sm);
-		@include text-shadow(0 1px #fff);
-		@include pattern-bg($color-yellow, 5%, 0.6);
-		a { 
+
+		background:$color-yellow;
+
+		a {
 			display:block;
 		}
 		a:hover {
@@ -51,28 +50,12 @@ $topicBackground:#666;
 	width:$size;
 	height:0;
 	padding:($size/2) 0;
-	
+
 	font-size:4*$size;
 	line-height:$size;
-	@include text-shadow(0px 1px #fff);
-	
-	border:1px solid lighten($topicBackground, $brightness*0.5) ;
-	@include border-radius(100%);
-	
-	&:hover {
-		width:$size*1.05;
-		height:0;
-		padding:(($size*1.05)/2) 0;
-		
-		font-size:4*($size*1.05);
-		line-height:$size*1.05;
-		
-		background:#fff;
-		border:1px solid lighten($topicBackground, $brightness*0.5) ;
 
-		@include border-radius(100%);
-		@include box-shadow(0 5px 50px rgba(0,0,0,0.5));
-	}
+	@include border-radius(100%);
+
 }
 
 .topics {
@@ -81,43 +64,53 @@ $topicBackground:#666;
 	margin-bottom:20%;
 
 	font-family:$font-brand-light;
-	@include text-shadow(0 1px #fff);
+
 	.topic {
 		position:absolute;
 		height:0;
 
-		color:#000; 
+		color:#000;
+		background:$color-lightest;
 		text-align:center;
-		
-		@include text-shadow(0 1px 1px #ccc);
-		@include box-shadow($shadow-lg);
-		@include transition(all ease-in-out .2s);
-		
-		&:hover { color:#000; }
+
+		@include transition(all .2s ease);
+
 	}
 	.blog {
 		top:35%;
 		left:22%;
 		@include topic($blogWidth, 35%);
+		border:2px solid $color-light-blue;
 		z-index:30;
+
+		&:hover { color:$color-light-blue; }
 	}
 	.about {
 		top:0%;
 		left:45%;
 		@include topic($aboutWidth, 40%);
+		border:2px solid $color-yellow;
 		z-index:40;
+
+		&:hover { color:$color-yellow; }
 	}
 	.social {
 		top:25%;
 		left:100%-$socialWidth;
 		@include topic($socialWidth, 5%);
+		border:2px solid $color-pink;
 		z-index:20;
+
+		&:hover { color:$color-pink; }
 	}
 	.work {
 		top:10%;
 		left:0%;
 		@include topic($workWidth, 10%);
+		border:2px solid $color-green;
 		z-index:10;
+
+		&:hover { color:$color-green; }
 	}
 
 	@media screen and ( min-width:620px ) {
@@ -125,14 +118,14 @@ $topicBackground:#666;
 		margin-bottom:0;
 		font-size:2em;
 
-		.blog { 
+		.blog {
 			top:9%;
 			left:14%;
  			@include topic($blogWidth/2, 35%);
-		}	
-		.about {	
+		}
+		.about {
 			top:4%;
-			left:30%;		
+			left:30%;
  			@include topic($aboutWidth/2, 40%);
 		}
 		.social {
@@ -155,14 +148,14 @@ $topicBackground:#666;
 
 		margin:-1em 0 0;
 		font-size:3em;
-		
+
 		.topic { left:80%; }
-		.blog { 
+		.blog {
 			top:0;
 			@include topic(10%, 10%);
 			z-index:40;
-		}	
-		.about {	
+		}
+		.about {
 			top:55%;
 			@include topic(10%, 35%);
 			z-index:30;
@@ -184,28 +177,28 @@ $topicBackground:#666;
 	position:absolute;
 	top:-380px;
 	right:25%;
-	
+
 	width:100px;
 	padding:20px 20px 80px;
-	
+
 	font-size:14px;
 
 	background:#fff;
-	@include box-shadow($shadow-sm);
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 	@include transition(ease 0.5s);
-	
+
 	// masking box
 	&:before {
 		content:"";
 		position:absolute;
 		left:0;
 		bottom:-105px;
-		
+
 		width:144px;
 		height:100px;
-		
+
 		background:$color-lightest;
-		@include box-shadow(0px -10px 30px $color-lightest);
 
 		z-index:10;
 	}
@@ -218,27 +211,28 @@ $topicBackground:#666;
 
 		width:100px;
 		height:100px;
-		
+
 		background:$color-lightest;
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
 		@include rotate(45deg);
-		@include box-shadow(inset $shadow-sm);
-		
+
 		z-index:0;
 	}
-	.nosey { 
-		position:absolute; 
+	.nosey {
+		position:absolute;
 		bottom:-160px;
 
 		text-align:center;
 
 		opacity:0;
-		
+
 		@include rotate(-10deg);
 		@include transition(1s ease);
 
 		z-index:20;
-		
-		.arrow { 
+
+		.arrow {
 			position:relative;
 			left:25px;
 
@@ -248,12 +242,12 @@ $topicBackground:#666;
 			margin:-25px 0 0 40px;
 
 			border-radius:30px;
-  			border-left:1px solid $color-copy;	
+  			border-left:1px solid $color-copy;
   			@include rotate(-50deg);
 			&:after {
 			  content:"";
 			  display:block;
-			  
+
 			  position:absolute;
 			  bottom:-6px;
 			  left:15px;
@@ -280,7 +274,7 @@ $topicBackground:#666;
 	// only show the banner at full width
 	@media screen and (min-width:960px) {
 
-		top:0px; 
+		top:0px;
 		.nosey { opacity:1; }
 	}
 }
