@@ -184,7 +184,8 @@ $topicBackground:#666;
 	font-size:14px;
 
 	background:#fff;
-	@include box-shadow($shadow-sm);
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 	@include transition(ease 0.5s);
 
 	// masking box
@@ -198,7 +199,6 @@ $topicBackground:#666;
 		height:100px;
 
 		background:$color-lightest;
-		@include box-shadow(0px -10px 30px $color-lightest);
 
 		z-index:10;
 	}
@@ -213,8 +213,9 @@ $topicBackground:#666;
 		height:100px;
 
 		background:$color-lightest;
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
 		@include rotate(45deg);
-		@include box-shadow(inset $shadow-sm);
 
 		z-index:0;
 	}
