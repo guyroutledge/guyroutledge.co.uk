@@ -2,12 +2,17 @@
 <?php the_post() ?>
 
 	<section class="section group">
-		
+
 		<a href="<?php echo get_permalink(get_ID_by_slug('blog')) ?>">
 			<h2 class="title blog"><i class="icon-calendar"></i> Latest Posts</h2>
 		</a>
-		
-		
+
+		<img class="work-desktop" src="<?php bloginfo('template_directory') ?>/img/desktop.png">
+		<img class="work-tablet" src="<?php bloginfo('template_directory') ?>/img/tablet.png">
+
+		<img class="work-mobile" src="<?php bloginfo('template_directory') ?>/img/mobile.png">
+
+
 		<?php // new query for latest posts
 
 		$args = array(
@@ -29,7 +34,7 @@
 				</a>
 
 				<?php if ( !empty($post_quote) ) : ?>
-				
+
 					<a href="<?php the_permalink() ?>">
 						<blockquote class="quote post-quote">
 	 						<?php echo wpautop($post_quote) ?>
@@ -42,7 +47,7 @@
 			</article>
 
 		<?php endwhile; wp_reset_query() ?>
-	
+
 		<?php get_template_part( 'inc/blog-nav' ) ?>
 
 	</section>
@@ -93,7 +98,7 @@
 				<?php the_excerpt() ?>
 			</div>
 
-		<?php endwhile; wp_reset_query() ?>	
+		<?php endwhile; wp_reset_query() ?>
 
 	</section>
 
@@ -121,7 +126,7 @@
 
 			</div>
 
-		<?php endwhile; wp_reset_query() ?>	
+		<?php endwhile; wp_reset_query() ?>
 
 	</section>
 

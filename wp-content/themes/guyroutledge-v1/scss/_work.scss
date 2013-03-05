@@ -4,18 +4,18 @@
 
 .gallery {
 	padding:1.5em 0;
-	article { 
+	article {
 		float:left;
 		width:200px;
 		margin:0.5em;
 
 		@media screen and (min-width:400px) {
-			width:40%; 
-			margin:2.5% 5%; 	
+			width:40%;
+			margin:2.5% 5%;
 		}
 		@media screen and (min-width:700px) {
-			width:44%; 
-			margin:2% 1%; 	
+			width:44%;
+			margin:2% 1%;
 		}
 	}
 	a {
@@ -34,3 +34,38 @@
 		@include box-shadow($shadow-lg);
 	}
 }
+
+//*************************
+//  	$$ Devices Gallery
+//**************************
+
+// Take advantage of automatically fluid images and add
+// a background image, constraining the size with
+// background-size to display each piece of work
+
+//background-size: (viewportWidth/imageWidth)*100% (viewportHeight/imageHeight)*100%
+
+.work-desktop {
+	display:block;
+	background-image:url('../img/yeo.jpg');
+	background-position:50% 14%;
+	background-repeat:no-repeat;
+	background-size:(456/498)*100% (257/401)*100%;
+}
+.work-tablet {
+	display:block;
+	background-image:url('../img/wt.jpg');
+	background-position:50% 57%;
+	background-repeat:no-repeat;
+	background-size:(212/274)*100% (278/347)*100%;
+}
+.work-mobile {
+	display:block;
+	background-image:url('../img/yeo-mobile.jpg');
+	background-position:50% 53%;
+	background-repeat:no-repeat;
+	background-size:(138/166)*100% (199/322)*100%;
+}
+
+
+
