@@ -59,6 +59,15 @@
 .work-title {
 	margin-bottom:0;
 }
+.work-link { display:block; }
+.work-title,
+.work-link {
+	text-align:center;
+
+	@media screen and (min-width:500px) {
+		text-align:left;
+	}
+}
 
 // Take advantage of automatically fluid images and add
 // a background image, constraining the size with

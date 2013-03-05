@@ -17,7 +17,7 @@ while ( $portfolio->have_posts() ) : $portfolio->the_post();
 
 		<h2 class="work-title"><?php the_title() ?></h2>
 		<?php if ( !empty($url) ) { ?>
-			<a href="<?php echo $url ?>"><?php echo $url ?></a>
+			<a class="work-link" href="<?php echo $url ?>"><?php echo $url ?></a>
 		<?php } ?>
 
 		<div class="work-container">
