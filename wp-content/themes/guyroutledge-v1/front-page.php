@@ -7,12 +7,6 @@
 			<h2 class="title blog"><i class="icon-calendar"></i> Latest Posts</h2>
 		</a>
 
-		<img class="work-desktop" src="<?php bloginfo('template_directory') ?>/img/desktop.png">
-		<img class="work-tablet" src="<?php bloginfo('template_directory') ?>/img/tablet.png">
-
-		<img class="work-mobile" src="<?php bloginfo('template_directory') ?>/img/mobile.png">
-
-
 		<?php // new query for latest posts
 
 		$args = array(
