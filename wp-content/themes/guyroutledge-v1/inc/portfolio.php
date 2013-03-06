@@ -2,6 +2,8 @@
 $args = array(
 	'post_type' => 'portfolio',
 	'post_status' => 'publish',
+	'orderby' => 'date',
+	'order' => 'DESC',
 	'posts_per_page' => -1
 );
 $portfolio = new WP_Query($args);
