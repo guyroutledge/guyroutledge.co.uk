@@ -31,8 +31,12 @@
 
 			<?php the_content() ?>
 			<?php if ( is_page('social') ) get_template_part('inc/latest-tweet'); ?>
-			
+
 		</div>
 	</section>
+
+	<?php if ( is_page('work') ) {
+		get_template_part('inc/portfolio');
+	} ?>
 
 <?php get_footer() ?>
