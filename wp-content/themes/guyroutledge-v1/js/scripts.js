@@ -38,7 +38,7 @@ jQuery(function($){
 // $$ No More Widows
 //**************************
 
-	$('p').html(function(i, html) {
+	$('section p, article p').html(function(i, html) {
 		return html.replace(/\s([\S]+)$/,'&nbsp;$1');
 	});
 
