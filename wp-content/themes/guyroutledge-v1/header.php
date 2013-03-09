@@ -13,7 +13,6 @@
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/stylesheets/screen.css" media="screen">
 
 	<meta name="viewport" content="width=device-width">
