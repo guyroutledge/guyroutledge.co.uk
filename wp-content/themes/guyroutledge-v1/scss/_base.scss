@@ -214,6 +214,13 @@ textarea {
 	input, select, textarea { margin:0; } // reduce separation on forms with validation errors
 }
 
+hr {
+	height:0;
+	margin:2.5em 0;
+	border:0;
+	border-bottom:1px solid #ccc;
+}
+
 
 /*********************
 	Layout
