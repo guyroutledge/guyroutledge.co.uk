@@ -1,6 +1,6 @@
 <blockquote id="twitter" class="quote tweet">
 <?php $latest_tweet = bfstf_get_tweets( 'guyroutledge', 1, 3600 );
-echo $latest_tweet[0]; ?>
+echo wpautop( $latest_tweet[0] ); ?>
 </blockquote>
 
 <?php // follow me button ?>
