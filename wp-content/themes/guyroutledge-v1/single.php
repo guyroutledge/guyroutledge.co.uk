@@ -7,7 +7,7 @@
 		<article class="blog-post inside">
 
 			<a href="#respond" title="Jump to the Comments"><h2 class="post-title" data-comments="<?php echo get_comments_number() ?>"><?php the_title() ?></h2></a>
- 			
+
  			<?php get_template_part( '/inc/meta' ) ?>
 
  			<?php if ( !empty($tldr) ) { ?>
@@ -17,8 +17,12 @@
  				</p>
  			<?php } ?>
 
+			<?php get_template_part('inc/share') ?>
+
  			<?php the_content() ?>
- 			
+
+			<?php get_template_part('inc/share') ?>
+
  			<p><?php edit_post_link('Edit this entry','','.'); ?></p>
 
  		</article>
