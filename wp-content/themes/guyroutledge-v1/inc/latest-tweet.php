@@ -1,5 +1,7 @@
-<?php // wraper for injecting the latest tweet ?>
-<blockquote id="twitter" class="quote tweet"></blockquote>
+<blockquote id="twitter" class="quote tweet">
+<?php $latest_tweet = bfstf_get_tweets( 'guyroutledge', 1, 3600 );
+echo $latest_tweet[0]; ?>
+</blockquote>
 
 <?php // follow me button ?>
 <a href="https://twitter.com/guyroutledge" class="twitter-follow-button" data-show-count="false">Follow @guyroutledge</a>
