@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
   	<meta name="description" content="">
 
-	<title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name') . ': '. bloginfo('description'); ?></title>
 
   	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" />
