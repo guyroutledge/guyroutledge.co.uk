@@ -36,7 +36,7 @@
 		<header class="site-header">
 			<div class="main-title">
 				<div class="inner-wrap">
-					<h1 class="no-margin"><a href="/"><?php bloginfo('name') ?></a></h1>
+					<h1 class="no-margin"><a href="https://plus.google.com/105864067956325551667" rel="author"><?php bloginfo('name') ?></a></h1>
 				</div>
 			</div>
 			<div class="inner-wrap">
