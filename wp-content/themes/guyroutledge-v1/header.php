@@ -36,6 +36,7 @@
 		<header class="site-header">
 			<div class="main-title">
 				<div class="inner-wrap">
+					<img class="header-img" src="<?php echo get_template_directory_uri() . '/img/guyroutledge.png' ?>" alt="Guy Routledge">
 					<h1 class="no-margin"><a href="/"><?php bloginfo('name') ?></a></h1>
 				</div>
 			</div>

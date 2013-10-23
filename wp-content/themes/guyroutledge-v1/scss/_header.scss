@@ -23,6 +23,31 @@
 			color:#000;
 		}
 	}
+	.header-img {
+		content:"";
+
+		position:absolute;
+		top:0;
+		left:12%;
+
+		width:198px;
+		height:169px;
+		background:url('../img/guyroutledge.png');
+
+		@media screen and (max-width:1730px) {
+			left:8%;
+		}
+		@media screen and (max-width:1560px) {
+			left:0;
+		}
+		@media screen and (max-width:1320px) {
+			left:76%;
+		}
+		@media screen and (max-width:660px) {
+			display:none;
+		}
+
+	}
 	.sub-title {
 		display:block;
 		padding:1em 0;
